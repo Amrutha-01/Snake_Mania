@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(164, 201, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.board{
+    background-color: black;
+    color: white;
+    height: 68vmin;
+    width: 65vmin;
+}
+.board .play-area{
+    min-height: 62vh;
+    display: grid;
+    grid-template-rows: repeat(30,1fr);
+    grid-template-columns: repeat(30,1fr);
+}
+.board .nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(32, 32, 32);
+    padding: 10px;
+    /* min-height: 7vh; */
+}
+.board .play-area .food{
+    background-color: rgb(238, 16, 79);
+} 
+.board .play-area .snake{
+    background-color: rgb(25, 147, 25);
+}
